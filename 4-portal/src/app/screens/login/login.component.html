@@ -6,6 +6,7 @@
       <label for="PASSWORD">Password</label>
       <input type="password" name="PASSWORD" [formControl]="fcPassword" />
     </div>
+    <p>{{requestResult | json}}</p>
     <!-- <div>
       {{ fcEmail.value }}
       {{ fcPassword.value }}
