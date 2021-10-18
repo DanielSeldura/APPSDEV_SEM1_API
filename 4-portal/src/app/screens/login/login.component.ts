@@ -9,23 +9,22 @@ import { Router } from '@angular/router';
 export class LoginComponent implements OnInit {
   constructor(private router: Router) {}
 
+  ngOnInit(): void {}
+
   fcEmail = new FormControl();
   fcPassword = new FormControl();
-
-  ngOnInit(): void {}
 
   login() {
     if (
       this.fcEmail.value == 'daniel@gmail.com' &&
       this.fcPassword.value == '12345678'
     ) {
-      this.router.navigate(['home']);
+      this.nav('home');
     } else {
       alert('Incorrect credentials');
       console.log('Nagkakamali ka ng susi');
     }
   }
-
   nav(destination: string) {
     this.router.navigate([destination]);
   }
