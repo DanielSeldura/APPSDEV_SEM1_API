@@ -13,7 +13,7 @@ export class UserService {
   }
 
 
-  reset(){
+  resetDB(){
     this.users = Helper.populate();
   }
 
