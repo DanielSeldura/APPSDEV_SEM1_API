@@ -42,7 +42,7 @@ export class UserController {
   replaceValuePut(@Param('id') id: string, @Body() body: any) {
     return this.userService.replaceValuePut(id, body);
   }
-  @Patch('/:reset')
+  @Patch('/reset')
   reset() {
     return this.userService.resetDB();
   }

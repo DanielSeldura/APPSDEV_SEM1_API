@@ -139,6 +139,7 @@ export class UserService {
           throw new Error(validBodyPatch.data);
         }
       } else {
+        console.log("nonexistentPatch")
         throw new Error(`User ${id} is not in database`);
       }
     } catch (error) {
