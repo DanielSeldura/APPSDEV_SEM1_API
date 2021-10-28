@@ -13,7 +13,9 @@ export class UserService {
   }
 
 
-  
+  reset(){
+    this.users = Helper.populate();
+  }
 
 
 
